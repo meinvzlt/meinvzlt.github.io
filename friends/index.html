@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://meinvzlt.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://meinvzlt.github.io/media/css/live2d.css">
+    <meta name="description" content="debug the world" />
+    <title>飞一般的咸菜</title>
+</head>
 <style>
-    a {
-        text-decoration: none;
+    @media screen and (max-width: 1300px) {
+        .archives-content ul li>span {
+            display: none;
+        }
+
+        .archives-content ul {
+            padding: 0px;
+        }
     }
 </style>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://meinvzlt.github.io/media/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://meinvzlt.github.io/media/css/live2d.css">
-<title>标签-飞一般的咸菜</title>
-
 
 <body>
     <!-- 响应式布局，针对PC端内容显示 -->
@@ -253,98 +263,26 @@
             alert("博主暂未设置QQ联系方式");
     }
 </script></div>
-                <div id="main" class="col-xs-12 col-sm-7">
-                    <style>
-    .postimage {
-        width: 100%;
-    }
-
-    .tag-container {
-        min-height: 100vh;
-        background: white;
-    }
-
-    @media screen and (max-width:1300px){
-        .tag-container{
-            margin-top:100px;
-        }
-    }
-</style>
-<link rel="stylesheet" href="https://meinvzlt.github.io/media/css/font-awesome.css">
-<div class="tag-container">
-    
-    <div class="postshow">
+                <div id="main" class="col-xs-12 col-sm-7" style="z-index: 999;">
+                    <body>
+    <div id="friendscontainermobile">
         
-        <div id="post" style="width:100%">
-            <img src="https://meinvzlt.github.io/post-images/蕾姆.jpg" class="postimage"
-                onclick="window.location.href= 'https://meinvzlt.github.io/post/蕾姆/';return false">
-            <div class="posttitlebox">
-                <div class="posttitle" onclick="window.location.href= 'https://meinvzlt.github.io/post/蕾姆/';return false">
-                    蕾姆我老婆
-                </div>
-            </div>
-        </div>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2020-05-25</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 0 min read</div>
-            <div class="posttag">
-                
-                <a href="https://meinvzlt.github.io/tag/K7OM6v8Q-/" class="postlink">
-                    <i class="fa fa-tag"></i> 动漫
-                </a>
-                
-            </div>
-        </div>
         
-</div>
-
-</div>
-                    <div style="background:white">
-                        <div class="pagi">
-    <ul>
         
-        <li><a style="width:100px">&nbsp;</a></li>
+    </div>
+
+    <div id="friendscontainer">
         
-                <li><a id="page1">1</a></li>
-                <li><a id="page2" class="active">2</a></li>
-                <li><a id="page3">3</a></li>
-                
-        <li><a style="width:100px">&nbsp;</a></li>
         
-            </ul>
-</div>
-
-<div id="pagination-prev" style="display:none"> 
-</div>
-<div id="pagination-next" style="display:none"> </div>
-
-
-<script>
-    var prevstr = document.getElementById("pagination-prev").innerHTML;
-    var nextstr = document.getElementById("pagination-next").innerHTML;
-    var page1 = document.getElementById("page1");
-    var page2 = document.getElementById("page2");
-    var page3 = document.getElementById("page3");
-    page1.innerHTML = '-';
-    page2.innerHTML = '1';
-    page3.innerHTML = '-';
-    if (prevstr.length > 5) {
-        if (prevstr.indexOf("page/") != -1) {
-            var prevnum = parseInt(prevstr.split("page/")[1]);
-            page1.innerHTML = prevnum;
-            page2.innerHTML = prevnum + 1;
-        } else {
-            page1.innerHTML = 1;
-            page2.innerHTML = 2;
-        }
-    }
-    if (nextstr.indexOf("page/") != -1) {
-        var nextnum = parseInt(nextstr.split("page/")[1]);
-        page3.innerHTML = nextnum;
-        page2.innerHTML = nextnum - 1;
-    }
-</script>
-                        <div style="padding-bottom:10%"></div>
+        
+    </div>
+</body>
+                    <div name="comment" style="background: white">
+                        <div class="commentcontainer">
+                            
+                            <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                            
+                        </div>
                     </div>
                 </div>
                 <div class="col-xs-6 col-sm-2"></div>
@@ -354,7 +292,6 @@
         </div>
         <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
     </div>
-
 
     <!-- 响应式布局，针对手机端内容显示 -->
     <div class="nav-small">
@@ -422,55 +359,27 @@
   <!-- 引入BootStrap核心js文件 -->
   <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-        <div style="margin-top:50px"></div>
-        <style>
-    .postimage {
-        width: 100%;
-    }
-
-    .tag-container {
-        min-height: 100vh;
-        background: white;
-    }
-
-    @media screen and (max-width:1300px){
-        .tag-container{
-            margin-top:100px;
-        }
-    }
-</style>
-<link rel="stylesheet" href="https://meinvzlt.github.io/media/css/font-awesome.css">
-<div class="tag-container">
-    
-    <div class="postshow">
+        <div style="margin-top:60px"></div>
+        <body>
+    <div id="friendscontainermobile">
         
-        <div id="post" style="width:100%">
-            <img src="https://meinvzlt.github.io/post-images/蕾姆.jpg" class="postimage"
-                onclick="window.location.href= 'https://meinvzlt.github.io/post/蕾姆/';return false">
-            <div class="posttitlebox">
-                <div class="posttitle" onclick="window.location.href= 'https://meinvzlt.github.io/post/蕾姆/';return false">
-                    蕾姆我老婆
-                </div>
-            </div>
-        </div>
-        <div class="postinfo">
-            <div class="postdate"><i class="fa fa-calendar"></i>2020-05-25</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 0 min read</div>
-            <div class="posttag">
+        
+        
+    </div>
+
+    <div id="friendscontainer">
+        
+        
+        
+    </div>
+</body>
+        <div style="margin-bottom:60px">&nbsp;</div>
+        <div name="comment" style="background: white">
+            <div class="commentcontainer">
                 
-                <a href="https://meinvzlt.github.io/tag/K7OM6v8Q-/" class="postlink">
-                    <i class="fa fa-tag"></i> 动漫
-                </a>
+                <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
                 
             </div>
-        </div>
-        
-</div>
-
-</div>
-        <div class="pagination-container">
-            
-            
         </div>
     </div>
     <div id="landlord">
@@ -480,7 +389,6 @@
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script src="https://meinvzlt.github.io/media/js/index.js"></script>
 
 <script type="text/javascript">
